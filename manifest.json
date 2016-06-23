@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "VK short cuts",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://vk.com/*",
+        "https://vk.com/*"
+      ],
+      "js": [
+        "jquery-2.2.4.min.js",
+        "jquery.ba-deparam.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "declarativeContent"
+  ]
+}
